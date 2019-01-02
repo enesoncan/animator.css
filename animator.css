@@ -7,3 +7,8 @@
  *
  * Copyright (c) 2019 Enes Öncan
 */
+
+.animator{
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
