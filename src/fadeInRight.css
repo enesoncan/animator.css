@@ -1,0 +1,26 @@
+.fadeInRight{
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInRight{
+	from{
+		opacity: 0;
+		transform: translate(-100%, 0);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes fadeInRight{
+	from{
+		opacity: 0;
+		transform: translate(-100%, 0);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}

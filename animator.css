@@ -2,13 +2,174 @@
 
 /*
  * https://www.animatorcss.com
- * Version - 0.1.0
+ * Version - 0.1.1
  * Licensed under the MIT license
  *
  * Copyright (c) 2019 Enes Öncan
 */
 
 .animator{
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+/*    -- Animator Speed --    */
+.slow{
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+.slower{
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.fast{
+  -webkit-animation-duration: .75s; /* 750ms */
+  animation-duration: .75s;
+}
+.faster{
+  -webkit-animation-duration: .5s; /* 500ms */
+  animation-duration: .5s;
+}
+
+/*    -- Text Effects --    */
+
+/* fadeIn */
+.fadeIn{
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+/* fadeInDown */
+.fadeInDown{
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown{
+	from{
+		opacity: 0;
+		-webkit-transform: translate(0, -100%);
+	}
+	to{
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+	}
+}
+
+@keyframes fadeInDown{
+	from{
+		opacity: 0;
+		transform: translate(0, -100%);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+/* fadeInUp */
+.fadeInUp{
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUp{
+	from{
+		opacity: 0;
+		-webkit-transform: translate(0, 100%);
+	}
+	to{
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+	}
+}
+
+@keyframes fadeInUp{
+	from{
+		opacity: 0;
+		transform: translate(0, 100%);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+/* fadeInLeft */
+.fadeInLeft{
+	-webkit-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInLeft{
+	from{
+		opacity: 0;
+		transform: translate(100%, 0);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes fadeInLeft{
+	from{
+		opacity: 0;
+		transform: translate(100%, 0);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+/* fadeInRight */
+.fadeInRight{
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInRight{
+	from{
+		opacity: 0;
+		transform: translate(-100%, 0);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes fadeInRight{
+	from{
+		opacity: 0;
+		transform: translate(-100%, 0);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
 }
