@@ -2,7 +2,7 @@
 
 /*
  * https://www.animatorcss.com
- * Version - 0.1.1
+ * Version - 0.1.2
  * Licensed under the MIT license
  *
  * Copyright (c) 2019 Enes Öncan
@@ -171,5 +171,140 @@
 	to{
 		opacity: 1;
 		transform: translate(0, 0);
+	}
+}
+
+/* fadeOut */
+.fadeOut{
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+@keyframes fadeOut{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+
+/* fadeOutDown */
+.fadeOutDown{
+	-webkit-animation-name: fadeOutDown;
+	animation-name: fadeOutDown;
+}
+
+@-webkit-keyframes fadeOutDown{
+	from{
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+	}
+	to{
+		opacity: 0;
+		-webkit-transform: translate(0, 100%);
+	}
+}
+
+@keyframes fadeOutDown{
+	from{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	to{
+		opacity: 0;
+		transform: translate(0, 100%);
+	}
+}
+
+/* fadeOutUp */
+.fadeOutUp{
+	-webkit-animation-name: fadeOutUp;
+	animation-name: fadeOutUp;
+}
+
+@-webkit-keyframes fadeOutUp{
+	from{
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+	}
+	to{
+		opacity: 0;
+		-webkit-transform: translate(0, -100%);
+	}
+}
+
+@keyframes fadeOutUp{
+	from{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	to{
+		opacity: 0;
+		transform: translate(0, -100%);
+	}
+}
+
+/* fadeOutLeft */
+.fadeOutLeft{
+	-webkit-animation-name: fadeOutLeft;
+	animation-name: fadeOutLeft;
+}
+
+@-webkit-keyframes fadeOutLeft{
+	from{
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+	}
+	to{
+		opacity: 0;
+		-webkit-transform: translate(-100%, 0);
+	}
+}
+
+@keyframes fadeOutLeft{
+	from{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	to{
+		opacity: 0;
+		transform: translate(-100%, 0);
+	}
+}
+
+/* fadeOutRight */
+.fadeOutRight{
+	-webkit-animation-name: fadeOutRight;
+	animation-name: fadeOutRight;
+}
+
+@-webkit-keyframes fadeOutRight{
+	from{
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+	}
+	to{
+		opacity: 0;
+		-webkit-transform: translate(100%, 0);
+	}
+}
+
+@keyframes fadeOutRight{
+	from{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	to{
+		opacity: 0;
+		transform: translate(100%, 0);
 	}
 }

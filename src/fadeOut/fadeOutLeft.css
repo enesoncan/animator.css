@@ -1,0 +1,26 @@
+.fadeOutLeft{
+	-webkit-animation-name: fadeOutLeft;
+	animation-name: fadeOutLeft;
+}
+
+@-webkit-keyframes fadeOutLeft{
+	from{
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+	}
+	to{
+		opacity: 0;
+		-webkit-transform: translate(-100%, 0);
+	}
+}
+
+@keyframes fadeOutLeft{
+	from{
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	to{
+		opacity: 0;
+		transform: translate(-100%, 0);
+	}
+}
