@@ -2,7 +2,7 @@
 
 /*
  * https://www.animatorcss.com
- * Version - 0.3.7
+ * Version - 0.4.1
  * Licensed under the MIT license
  *
  * Copyright (c) 2019 Enes Öncan
@@ -636,7 +636,61 @@
 	}
 }
 
+/* flip Effects */
+.flipX{
+  -webkit-animation-name: flipX;
+	animation-name: flipX;
+	backface-visibility: visible !important;
+}
 
+@-webkit-keyframes flipX{
+  0%{
+  	opacity: 0;
+    -webkit-transform: perspective(500px) rotate3d(1, 0, 0, 90deg);
+  }
+
+  40%{
+    -webkit-transform: perspective(500px) rotate3d(1, 0, 0, -30deg);
+  }
+
+  60%{
+    opacity: 0.5;
+    -webkit-transform: perspective(500px) rotate3d(1, 0, 0, 15deg);
+  }
+
+  80%{
+    -webkit-transform: perspective(500px) rotate3d(1, 0, 0, -15deg);
+  }
+
+  100%{
+  	opacity: 1;
+    -webkit-transform: perspective(500px);
+  }
+}
+
+@keyframes flipX{
+  0%{
+    opacity: 0;
+    transform: perspective(500px) rotate3d(1, 0, 0, 90deg);
+  }
+
+  40%{
+    transform: perspective(500px) rotate3d(1, 0, 0, -30deg);
+  }
+
+  60%{
+    transform: perspective(500px) rotate3d(1, 0, 0, 15deg);
+  }
+
+  80%{
+  	opacity: 1;
+    transform: perspective(500px) rotate3d(1, 0, 0, -15deg);
+  }
+
+  100%{
+    transform: perspective(500px);
+  }
+}
 
 /*    -- Specials Effects --*/
 
