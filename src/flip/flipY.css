@@ -1,0 +1,53 @@
+.flipY{
+	animation-name: flipY;
+	-webkit-animation-name: flipY;
+	backface-visibility: visible !important;
+}
+@-webkit-keyframes flipY{
+  0%{
+  	opacity: 0;
+    -webkit-transform: perspective(500px) rotate3d(0, 1, 0, 90deg);
+  }
+
+  40%{
+    -webkit-transform: perspective(500px) rotate3d(0, 1, 0, -30deg);
+  }
+
+  60%{
+    opacity: 0.5;
+    -webkit-transform: perspective(500px) rotate3d(0, 1, 0, 15deg);
+  }
+
+  80%{
+    -webkit-transform: perspective(500px) rotate3d(0, 1, 0, -15deg);
+  }
+
+  100%{
+  	opacity: 1;
+    -webkit-transform: perspective(500px);
+  }
+}
+
+@keyframes flipY{
+  0%{
+    opacity: 0;
+    transform: perspective(500px) rotate3d(0, 1, 0, 90deg);
+  }
+
+  40%{
+    transform: perspective(500px) rotate3d(0, 1, 0, -30deg);
+  }
+
+  60%{
+    transform: perspective(500px) rotate3d(0, 1, 0, 15deg);
+  }
+
+  80%{
+  	opacity: 1;
+    transform: perspective(500px) rotate3d(0, 1, 0, -15deg);
+  }
+
+  100%{
+    transform: perspective(500px);
+  }
+}
